@@ -2,6 +2,12 @@ import os
 import csv
 from load_conf import auth_dir, concept_scheme_name
 
+'''
+Use this to create a new authority document. You have the option of including
+a .values file as well, which will be populated with sortorder values to
+retain the order of your concepts as you enter them.
+'''
+
 out_dir = 'concepts/authority_files'
 
 def get_entries():

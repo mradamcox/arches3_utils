@@ -3,6 +3,16 @@ import csv
 import sys
 from load_conf import auth_dir, graph_dir, concept_scheme_name, log_dir
 
+'''
+This script uses your resource graphs (in the standard nodes/edges format)
+to find all of the authority documents and create links between them and the
+'domains' nodes that use them. This means you MUST have a .E32 node in your
+graph for each authority document.
+
+It WILL rewrite your existing 'ENTITY_TYPE_X_ADOC.csv' file, so it is advisable
+to back that up when you first begin to use this script.
+'''
+
 out_file = os.path.join(auth_dir,"ENTITY_TYPE_X_ADOC.csv")
 
 def check_for_authdocs(final_dict,auth_dir):

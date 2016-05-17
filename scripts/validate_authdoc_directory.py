@@ -4,7 +4,10 @@ import csv
 import time
 from load_conf import auth_dir, log_dir
 
-#auth_dir = r'concepts\authority_files'
+'''
+This script performs a basic check throughout your authority files, but is
+not 100% complete at this point. It does not rewrite any of your files.
+'''
 
 def parse_auth_doc(auth_doc_reader):
     '''basic checking and parsing of file'''
