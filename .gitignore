@@ -1,6 +1,6 @@
 # app-specific exclusions
 /logs
-config.py
+conf.py
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
